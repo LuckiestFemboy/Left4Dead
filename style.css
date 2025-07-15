@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "main";
+    src: url("media/BoringSansBold.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", Arial, Helvetica, sans-serif; /* Using Inter as a fallback/primary if 'main' isn't loaded */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+* {
+    font-family: "main", "Inter", Arial, Helvetica, sans-serif; /* Prioritize 'main' font */
+}
+
+.background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.menu-container {
+    position: relative;
+    z-index: 1; /* Ensure menu is above the video */
+    /* Adjusted padding to move menu closer to top-left for 1-1 placement */
+    padding-top: 10.5rem; /* Fine-tuned top padding */
+    padding-left: 10.5rem; /* Fine-tuned left padding */
+}
+
+.menu-card {
+    /* Removed explicit background, padding, shadow, and rounded corners to match the 1-1 look */
+    background: none; /* No background */
+    padding: 0; /* No padding */
+    box-shadow: none; /* No shadow */
+    border-radius: 0; /* No rounded corners */
+    backdrop-filter: none; /* Removed blur effect */
+}
+
+.text-shadow-lg {
+    /* Subtle text shadow to mimic the original game's text */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.menu-item {
+    /* Custom styles for menu items */
+    font-weight: bold;
+    letter-spacing: 1px;
+    /* Removed block padding and rounded-md to make it look like plain text */
+    padding: 0;
+    border-radius: 0;
+    line-height: 1.2; /* Adjusted line height for tighter spacing */
+    font-size: 1.1rem; /* Adjusted font size for 1-1 match */
+    color: #7e7e7e;
+    text-decoration: none; /* Remove underline from links */
+}
+
+.menu-item:hover {
+    color: #ffffff; /* Keep text white */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.5); /* White glow effect */
+}
+
+.separator {
+    margin-top: 0.75rem; /* Adjusted spacing for the separator */
+    margin-bottom: 0.75rem;
+    border-color: rgba(255, 255, 255, 0.2); /* More subtle separator line */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .menu-container {
+        justify-content: flex-start; /* Keep left alignment */
+        padding-top: 6rem; /* Adjust padding for smaller screens */
+        padding-left: 6rem;
+    }
+
+    .menu-item {
+        font-size: 1rem; /* Adjust menu item font size for smaller screens */
+    }
+}
