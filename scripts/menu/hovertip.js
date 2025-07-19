@@ -6,7 +6,8 @@ const descriptions = {
   "menu-achievements": "View your progress and acomplishments.",
   "menu-options": "Adjust game settings and controls.",
   "menu-update-log": "Check out the latest updates and changes.",
-  "menu-quit": "Exit the game."
+  "menu-quit": "Exit the game.",
+  "username-option": "Make your in game username here."
 };
 
 const descriptionBox = document.getElementById("item-description");
