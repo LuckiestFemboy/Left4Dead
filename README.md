@@ -1,2 +1,2 @@
-# SteamClient
-This is just the steam client ui remade in html/css/js
+# L4D Online
+readme coming soon
