@@ -1,2 +1,2 @@
 # L4D Online
-readme coming soon
+readme coming soon...
